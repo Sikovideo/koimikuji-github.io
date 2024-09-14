@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>恋みくじ</title>
+    <title>真みくじ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                 const name = document.getElementById('name').value.trim();
                 if (name) {
                     // 名前を渡して次のページに移動
-                    window.location.href = `mikuji.htmlname=${encodeURIComponent(name)}`;
+                    window.location.href = `next_page.html?name=${encodeURIComponent(name)}`;
                 } else {
                     alert("名前を入力してください");
                 }
